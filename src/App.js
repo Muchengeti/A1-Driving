@@ -6,7 +6,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 
-
 class App extends Component {
   render() {
     return (
@@ -24,7 +23,6 @@ class App extends Component {
             <li><Link to={'/'} className="nav-link"> Book Now </Link></li>
           </ul>
           </nav>
-          
           <Switch>
               <Route exact path='/' component={Home} />
               <Route path='/about' component={About} />

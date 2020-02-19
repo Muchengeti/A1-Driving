@@ -6,6 +6,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+
+
 class Home extends Component {
   render() {
     return (
@@ -14,9 +16,10 @@ class Home extends Component {
             <h2>Welcome to A1 Driving School</h2>
             <h4>You’ve come to the right place for your driver education!</h4>
           </div>
+  
           <Container>
             <Row>
-              <Col sm={8}>
+              <Col xs={8}>
                  <Jumbotron className="text-center">
                   <h1>Driver Training & Specialists</h1>
                   <hr/>
@@ -44,7 +47,7 @@ class Home extends Component {
                 </Jumbotron>
               </Col>
 
-              <Col lg={4}>
+              <Col xs={4} className="text-center">
               {/* <CardGroup> */}
                 <Card bg="warning" text="white">
                   {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
