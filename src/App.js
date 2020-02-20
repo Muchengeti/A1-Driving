@@ -5,13 +5,15 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import NavBar from './components/NavBar';
+
 
 class App extends Component {
   render() {
     return (
     <Router>
         <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <h2>A1 Driving School</h2>
           <ul className="navbar-nav auto">
             <li><Link to={'/'} className="nav-link"> Home </Link></li>
@@ -22,7 +24,8 @@ class App extends Component {
           <ul className="navbar-nav ml-auto">
             <li><Link to={'/'} className="nav-link"> Book Now </Link></li>
           </ul>
-          </nav>
+          </nav> */}
+          <NavBar></NavBar>
           <Switch>
               <Route exact path='/' component={Home} />
               <Route path='/about' component={About} />

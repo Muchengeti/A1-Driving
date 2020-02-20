@@ -12,10 +12,13 @@ class Home extends Component {
   render() {
     return (
         <div>
-          <div className="text-center">
-            <h2>Welcome to A1 Driving School</h2>
-            <h4>You’ve come to the right place for your driver education!</h4>
-          </div>
+          <Container>
+            <div className="text-center">
+              <h2>Welcome to A1 Driving School</h2>
+              <h4>You’ve come to the right place for your driver education!</h4>
+            </div>
+          </Container>
+          
   
           <Container>
             <Row>
