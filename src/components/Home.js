@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import HomeCarousel from './HomeCarousel.jsx';
 
 
 
@@ -12,14 +13,14 @@ class Home extends Component {
   render() {
     return (
         <div>
-          <Container>
-            <div className="text-center">
-              <h2>Welcome to A1 Driving School</h2>
-              <h4>You’ve come to the right place for your driver education!</h4>
-            </div>
-          </Container>
           
-  
+            {/* <div className="text-center"> */}
+              <HomeCarousel></HomeCarousel>
+              <br/>
+            {/* </div> */}
+          
+          
+
           <Container>
             <Row>
               <Col xs={8}>
@@ -61,7 +62,7 @@ class Home extends Component {
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small className="text-muted"><Button variant="outline-light">Explore</Button></small>
+                    <small className="text-muted"><Button variant="outline-dark">Explore</Button></small>
                   </Card.Footer>
                 </Card>
                 <br/>
@@ -75,7 +76,7 @@ class Home extends Component {
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small className="text-muted"><Button variant="outline-light">Explore</Button></small>
+                    <small className="text-muted"><Button variant="outline-dark">Explore</Button></small>
                   </Card.Footer>
                 </Card>
                 <br/>
@@ -89,7 +90,7 @@ class Home extends Component {
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small className="text-muted"><Button variant="outline-light">Explore</Button></small>
+                    <small className="text-muted"><Button variant="outline-dark">Explore</Button></small>
                   </Card.Footer>
                 </Card>
                 <br/>
@@ -102,7 +103,7 @@ class Home extends Component {
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <small className="text-muted"><Button variant="outline-light">Explore</Button></small>
+                    <small className="text-muted"><Button variant="outline-dark">Explore</Button></small>
                   </Card.Footer>
                 </Card>
               </Col>
