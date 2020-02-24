@@ -44,7 +44,7 @@ class Footer extends Component {
             </Container>
             <div style={{backgroundColor:"dimgray"}}>
                 <br/>
-                <p style={{margin:0}}>© 2020 | A1 Driving School Wellington | All Rights Reserved .</p>
+                <p style={{margin:0}}>A1 Driving School Wellington © 2020 | All Rights Reserved .</p>
                 <br/>
             </div>
         </div>
