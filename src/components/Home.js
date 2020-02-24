@@ -13,14 +13,8 @@ class Home extends Component {
   render() {
     return (
         <div>
-          
-            {/* <div className="text-center"> */}
-              <HomeCarousel></HomeCarousel>
-              <br/>
-            {/* </div> */}
-          
-          
-
+          <HomeCarousel></HomeCarousel>
+          <br/>
           <Container>
             <Row>
               <Col xs={8}>

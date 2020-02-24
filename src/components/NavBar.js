@@ -7,7 +7,7 @@ class NavBar extends Component {
   render() {
     return (
         <div>
-            <Navbar bg="warning" variant="dark">
+            <Navbar style={{backgroundColor:"slategray"}} variant="dark">
                 <Navbar.Brand href="/">
                 <img
                     alt=""
