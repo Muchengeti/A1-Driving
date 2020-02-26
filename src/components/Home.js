@@ -14,6 +14,11 @@ class Home extends Component {
     return (
         <div>
           <HomeCarousel></HomeCarousel>
+          <div className="padding" style={{backgroundColor:"slategray", color:"white"}}>
+            <br/>
+            <h2 className="text-center">Wellington | Hutt | Porirua</h2>
+            <br/>
+          </div>
           <br/>
           <Container>
             <Row>
@@ -47,7 +52,7 @@ class Home extends Component {
 
               <Col xs={4} className="text-center">
               {/* <CardGroup> */}
-                <Card bg="warning" text="white">
+                <Card bg="warning" text="black">
                   {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                   <Card.Body>
                     <Card.Title>Driving Lessons</Card.Title>
@@ -60,7 +65,7 @@ class Home extends Component {
                   </Card.Footer>
                 </Card>
                 <br/>
-                <Card bg="warning" text="white">
+                <Card bg="warning" text="black">
                   {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                   <Card.Body>
                     <Card.Title>Defensive Driving</Card.Title>
@@ -74,7 +79,7 @@ class Home extends Component {
                   </Card.Footer>
                 </Card>
                 <br/>
-                <Card bg="warning" text="white">
+                <Card bg="warning" text="black">
                   {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                   <Card.Body>
                     <Card.Title>Disability Training</Card.Title>
@@ -88,7 +93,7 @@ class Home extends Component {
                   </Card.Footer>
                 </Card>
                 <br/>
-                <Card bg="warning" text="white">
+                <Card bg="warning" text="black">
                   {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                   <Card.Body>
                     <Card.Title>Road Code Tuition</Card.Title>
