@@ -1,16 +1,27 @@
-# base image
-FROM node:12.2.0-alpine
+# # base image
+# FROM node:12.2.0-alpine
 
-# set working directory
-WORKDIR /app
+# # set working directory
+# WORKDIR /app
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+# # add `/app/node_modules/.bin` to $PATH
+# ENV PATH /app/node_modules/.bin:$PATH
 
-# install and cache app dependencies
-COPY package.json /app/package.json
-RUN npm install --silent
-RUN npm install react-scripts@3.0.1 -g --silent
+# # install and cache app dependencies
+# COPY package.json /app/package.json
+# RUN npm install --silent
+# RUN npm install react-scripts@3.0.1 -g --silent
 
-# start app
-CMD ["npm", "start"]
+# # start app
+# CMD ["npm", "start"]
+
+FROM node:alpine as builder
+WORKDIR '/app'
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM nginx
+EXPOSE 80
+COPY --from=builder /app/build /usr/share/nginx/html
